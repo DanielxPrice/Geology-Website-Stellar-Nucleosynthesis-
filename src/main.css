@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background:
+    radial-gradient(circle at top left, rgba(255, 140, 220, 0.25), transparent 30%),
+    radial-gradient(circle at top right, rgba(120, 180, 255, 0.2), transparent 35%),
+    radial-gradient(circle at bottom center, rgba(170, 120, 255, 0.18), transparent 30%),
+    linear-gradient(180deg, #120224 0%, #1a0b3b 45%, #090014 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.appContainer {
+  position: relative;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.mainContent {
+  position: relative;
+  z-index: 2;
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+
+.pageCard {
+  padding: 50px 36px;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 0 35px rgba(180, 120, 255, 0.18),
+    inset 0 0 25px rgba(255, 255, 255, 0.05);
+}
+
+.pageCard h1 {
+  margin-top: 0;
+  font-size: 2.8rem;
+  color: #ffe2fa;
+}
+
+.pageCard p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #f4ebff;
+  max-width: 700px;
+}
+
+.stars {
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(2px 2px at 40px 70px, #ffd6fb, transparent),
+    radial-gradient(1.5px 1.5px at 90px 40px, #9fd3ff, transparent),
+    radial-gradient(2px 2px at 130px 80px, white, transparent),
+    radial-gradient(1.5px 1.5px at 160px 120px, #d6b3ff, transparent);
+  background-size: 200px 200px;
+  opacity: 0.35;
+  animation: drift 90s linear infinite;
+  pointer-events: none;
+}
+
+.starsTwo {
+  opacity: 0.2;
+  animation-duration: 130s;
+}
+
+.starsThree {
+  opacity: 0.12;
+  animation-duration: 170s;
+}
+
+@keyframes drift {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .pageCard {
+    padding: 34px 22px;
+  }
+
+  .pageCard h1 {
+    font-size: 2rem;
+  }
+}
+
+.contactPage {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contactEyebrow {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffb7ef;
+}
+
+.contactIntro {
+  margin-bottom: 30px;
+}
+
+.contactText {
+  max-width: 650px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.contactBox {
+  padding: 24px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 0 18px rgba(170, 120, 255, 0.12),
+    inset 0 0 10px rgba(255, 255, 255, 0.04);
+}
+
+.contactBox h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #ffe2fa;
+}
+
+.contactLabel {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  color: #cdb8ff;
+}
+
+.contactLink {
+  color: #ffffff;
+  word-break: break-word;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.contactLink:hover {
+  color: #ffd6fb;
+  text-shadow: 0 0 10px rgba(255, 170, 240, 0.45);
+}
+
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
