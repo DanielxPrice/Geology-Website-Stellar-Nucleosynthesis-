@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Gallery from "./pages/Gallery";
+import Overview from "./pages/Overview";
+import ElementFormation from "./pages/ElementFormation";
+import StellarStages from "./pages/StellarStages";
+import Supernovae from "./pages/Supernovae";
+import Sources from "./pages/Sources";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -19,9 +21,11 @@ function App() {
         <main className="mainContent">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/overview" element={<Overview />} />
+            <Route path="/element-formation" element={<ElementFormation />} />
+            <Route path="/stellar-stages" element={<StellarStages />} />
+            <Route path="/supernovae" element={<Supernovae />} />
+            <Route path="/sources" element={<Sources />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

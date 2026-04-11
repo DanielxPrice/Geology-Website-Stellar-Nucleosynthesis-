@@ -11,16 +11,24 @@ function Navbar() {
           Home
         </NavLink>
 
-        <NavLink to="/about" className={({ isActive }) => (isActive ? "activeLink" : "")}>
-          About
+        <NavLink to="/overview" className={({ isActive }) => (isActive ? "activeLink" : "")}>
+          Overview
         </NavLink>
 
-        <NavLink to="/projects" className={({ isActive }) => (isActive ? "activeLink" : "")}>
-          Projects
+        <NavLink to="/element-formation" className={({ isActive }) => (isActive ? "activeLink" : "")}>
+          Element Formation
         </NavLink>
 
-        <NavLink to="/gallery" className={({ isActive }) => (isActive ? "activeLink" : "")}>
-          Gallery
+        <NavLink to="/stellar-stages" className={({ isActive }) => (isActive ? "activeLink" : "")}>
+          Stellar Stages
+        </NavLink>
+
+        <NavLink to="/supernovae" className={({ isActive }) => (isActive ? "activeLink" : "")}>
+          Supernovae
+        </NavLink>
+
+        <NavLink to="/sources" className={({ isActive }) => (isActive ? "activeLink" : "")}>
+          Sources
         </NavLink>
 
         <NavLink to="/contact" className={({ isActive }) => (isActive ? "activeLink" : "")}>
