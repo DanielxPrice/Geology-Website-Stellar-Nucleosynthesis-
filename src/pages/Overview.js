@@ -1,3 +1,5 @@
+import overviewImage from "../assets/overview.png";
+
 function Overview() {
   return (
     <section className="pageCard overviewPage">
@@ -15,6 +17,13 @@ function Overview() {
           of the material that made the solar system.
         </p>
       </div>
+
+      <figure className="overviewFigure fadeUp delayOne">
+        <img src={overviewImage} alt="Overview of burning stages" className="overviewImage" />
+        <figcaption>
+          Figure 2: A basic overview of the burning stages. Image from NASA Cosmicopia: https://cosmicopia.gsfc.nasa.gov/nucleo.html
+        </figcaption>
+      </figure>
 
       <div className="quoteBlock fadeUp delayOne">
         <p className="quoteText">

@@ -1,3 +1,5 @@
+import gasCloudImage from "../assets/gasCloud.png";
+
 function StellarStages() {
   return (
     <section className="pageCard overviewPage">
@@ -30,6 +32,13 @@ function StellarStages() {
           nuclear burning can begin.
         </p>
       </div>
+
+      <figure className="overviewFigure fadeUp delayTwo">
+        <img src={gasCloudImage} alt="Gas cloud halo in NGC 6240" className="overviewImage" />
+        <figcaption>
+          Figure 4: A gas cloud called a “halo,” located in the system NGC 6240. Image source: NASA, https://www.nasa.gov/universe/giant-gas-cloud-in-system-ngc-6240/.
+        </figcaption>
+      </figure>
 
       <div className="overviewExamples fadeUp delayTwo">
         <h2>Main Stages</h2>

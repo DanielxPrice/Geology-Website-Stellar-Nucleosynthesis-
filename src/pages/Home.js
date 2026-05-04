@@ -13,13 +13,16 @@ function Home() {
           </p>
         </div>
 
-        <div className="homeImageWrap fadeUp delayOne">
+        <figure className="homeImageWrap overviewFigure fadeUp delayOne">
           <img
             src={require("../assets/stellarNucleosynthesis.png")}
             alt="Illustration of stellar nucleosynthesis"
             className="homeImage"
           />
-        </div>
+          <figcaption className="figureCaption">
+            Figure 1: Illustration of stellar nucleosynthesis
+          </figcaption>
+        </figure>
       </div>
 
       <div className="homeGrid">

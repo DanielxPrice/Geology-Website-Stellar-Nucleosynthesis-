@@ -82,6 +82,54 @@ function Sources() {
             Revised and expanded edition. Princeton University Press, 2012. ISBN: 978-0-691-14006-3.
           </p>
         </article>
+
+        <article className="sourceItem">
+          <h2>NASA Cosmicopia: Stellar Nucleosynthesis</h2>
+          <p className="sourceAuthors">NASA Goddard Space Flight Center</p>
+          <p className="sourceDetails">
+            Overview of nuclear processes in stars. Image source used for Figure 1.
+          </p>
+          <a
+            className="sourceLink"
+            href="https://cosmicopia.gsfc.nasa.gov/nucleo.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Source
+          </a>
+        </article>
+
+        <article className="sourceItem">
+          <h2>NASA: Giant Gas Cloud in NGC 6240</h2>
+          <p className="sourceAuthors">NASA</p>
+          <p className="sourceDetails">
+            Description of a gas cloud halo in the NGC 6240 system, used for Figure 2.
+          </p>
+          <a
+            className="sourceLink"
+            href="https://www.nasa.gov/universe/giant-gas-cloud-in-system-ngc-6240/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Source
+          </a>
+        </article>
+
+        <article className="sourceItem">
+          <h2>Hubble Captures Supernova in NGC 2525</h2>
+          <p className="sourceAuthors">ESA/Hubble</p>
+          <p className="sourceDetails">
+            Image and caption source for a supernova in NGC 2525.
+          </p>
+          <a
+            className="sourceLink"
+            href="https://esahubble.org/wordbank/supernova/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Source
+          </a>
+        </article>
       </div>
     </section>
   );

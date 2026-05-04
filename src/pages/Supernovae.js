@@ -1,3 +1,5 @@
+import supernovaeImage from "../assets/supernovae.png";
+
 function Supernovae() {
   return (
     <section className="pageCard overviewPage">
@@ -15,6 +17,17 @@ function Supernovae() {
           inside stars before the explosion.
         </p>
       </div>
+
+      <figure className="overviewFigure fadeUp delayOne">
+        <img
+          className="figureImage"
+          src={supernovaeImage}
+          alt="Hubble Captures Supernova in NGC 2525"
+        />
+        <figcaption className="figureCaption">
+          Figure 5:Hubble Captures Supernova in NGC 2525. Source: ESA/Hubble.
+        </figcaption>
+      </figure>
 
       <div className="quoteBlock fadeUp delayOne">
         <p className="quoteText">

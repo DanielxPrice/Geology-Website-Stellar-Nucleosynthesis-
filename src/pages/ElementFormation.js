@@ -153,6 +153,22 @@ function ElementFormation() {
         </div>
       </div>
 
+      <div className="exampleItem beyondIronItem fadeUp delayFour">
+        <div>
+          <h3>How Heavier Elements Form</h3>
+          <p>
+            Heavier elements form mainly through neutron-capture processes rather than
+            ordinary fusion. In these processes, a nucleus captures neutrons and
+            becomes heavier. If the nucleus becomes unstable, some of those neutrons
+            can change into protons through beta decay, which creates a new element.
+            In the s-process, this buildup happens more slowly, while in the
+            r-process it happens very rapidly under extreme conditions. Together,
+            these processes help explain how many elements beyond the iron peak are
+            formed.
+          </p>
+        </div>
+      </div>
+
       <div className="overviewExamples fadeUp delayFour">
         <h2>Visual Summary of Burning Stages</h2>
         <p className="examplesLead">
@@ -162,13 +178,16 @@ function ElementFormation() {
           producing elements near the iron peak.
         </p>
 
-        <div className="diagramWrap">
+        <figure className="diagramFigure">
           <img
             src={require("../assets/burningStages.png")}
             alt="Diagram showing hydrogen, helium, carbon, neon, oxygen, and silicon burning stages in stars"
             className="diagramImage"
           />
-        </div>
+          <figcaption className="figureCaption">
+            Figure 3: Burning stages diagram.
+          </figcaption>
+        </figure>
       </div>
       
 
